@@ -1,0 +1,266 @@
+.search-full-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 200;
+  color: #434242;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: small;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.searchactive {
+  max-height: 700px;
+}
+
+.search-left-side {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 52px;
+}
+
+.nintindo-logo-cont {
+  width: 105px;
+  height: 52px;
+  background-color: #e60012;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nintindo-logo-img {
+  width: 70px;
+}
+
+.search-search-con {
+  border-bottom: 1px solid black;
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  width: auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search-search,
+.search-search-category {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 1px 0;
+}
+
+.search-input {
+  outline: none;
+  width: 260px;
+  flex: 1;
+  color: black;
+  font-weight: 300;
+}
+
+.search-canclebtn {
+  position: absolute;
+  right: 1%;
+}
+
+.search-canclebtn svg {
+  color: #434242a3;
+  transition: 0.4s;
+}
+
+.search-canclebtn svg:hover {
+  color: #434242;
+  cursor: pointer;
+}
+
+.search-search-con:hover {
+  border-color: #e60012;
+}
+
+.search-drop-down {
+  z-index: 125;
+  position: absolute;
+  right: 1%;
+  top: 103%;
+  width: 120px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search-search-category span {
+  transition: transform 0.3s ease;
+}
+
+.search-search:hover,
+.search-search-category:hover {
+  color: #e60012;
+}
+
+.selected-category {
+  font-size: 14px;
+}
+
+.selected-category:hover {
+  background-color: grey;
+}
+
+.search-down-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 40px 50px 0px;
+  gap: 20px;
+}
+
+.search-right {
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-right p {
+  color: #e60012;
+  cursor: pointer;
+}
+
+.search-right p:hover {
+  color: #e60012;
+}
+
+.search-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-left h1 {
+  font-size: 15px;
+}
+
+.search-card {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.392);
+}
+
+.search-card-img img {
+  min-width: 100px;
+  height: 100% !important;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.search-card-details {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.detailofcard {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.search-fav-icon {
+  position: absolute;
+  top: -50%;
+  right: 0%;
+}
+
+.search-fav-icon svg {
+  color: #e60012;
+  font-size: 15px;
+  width: 35px;
+  cursor: pointer;
+}
+.search-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(auto, 343px));
+}
+
+.grey-screen-search {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.53);
+  z-index: 100;
+}
+
+@media screen and (max-width: 1450px) {
+  .search-left-side {
+    display: flex;
+    width: 100%;
+  }
+  .search-down-div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 100px;
+  }
+
+  .search-right,
+  .search-left {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nintindo-logo-cont {
+    display: none;
+  }
+
+  .search-full-container {
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .searchactive {
+    max-height: 1000px;
+  }
+
+  .search-down-div {
+    margin-left: 10px;
+  }
+
+  .search-grid {
+    grid-template-columns: repeat(1, minmax(auto, 343px));
+  }
+
+  .search-left-side {
+    padding: 10px;
+  }
+
+  .search-input {
+    width: auto;
+  }
+
+  .search-search-con {
+    flex: 0.98;
+  }
+}

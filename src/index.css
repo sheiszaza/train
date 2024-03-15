@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes repulse {
+  40% {
+    transform: scale(1.1);
+  }
+  55% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.08);
+  }
+  75% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes opac {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+}
