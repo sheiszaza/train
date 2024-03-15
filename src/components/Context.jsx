@@ -18,7 +18,7 @@ export const NavProvider = ({ children }) => {
 export const useCont = () => {
   const context = useContext(NavContext);
   if (!context) {
-    throw new Error("useCont must be used within a NavProvider");
+    throw new Error("useCont must be used within a NavProviders");
   }
   return context;
 };
