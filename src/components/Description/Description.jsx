@@ -27,6 +27,7 @@ function Description() {
     };
   }, []);
 
+  // Hello world
   return (
     <div className="desc-full-cont">
       <div className="desc-cont">
