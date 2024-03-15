@@ -35,7 +35,7 @@ Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can 
   Supported: "TV mode, Tabletop mode, Handheld mode",
   Size: "1.5GB",
   langauges:
-    "English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish, Traditional Chinese",
+    "English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish, Traditional Chinese, Taiwanese",
 };
 
 export const Games = [
