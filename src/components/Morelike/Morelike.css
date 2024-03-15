@@ -1,0 +1,143 @@
+.more-full-cont {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-cont {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 20px;
+}
+
+.card-cont {
+  min-width: 260px;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.414);
+  cursor: pointer;
+}
+
+.upper-side {
+  height: 45%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.upper-side img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 260px;
+}
+
+.lower-side {
+  flex: 1;
+  position: relative;
+  padding: 15px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-sale {
+  display: flex;
+  width: 120px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.card-sale p {
+  margin: 0 auto;
+}
+
+.card-prices {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-cont:hover .card-tit {
+  color: #e60012;
+}
+
+.fav-icon {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+
+.fav-icon svg {
+  color: #e60012;
+  font-size: 10px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.more-games {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-left: 20px;
+  position: relative;
+  min-height: 330px;
+  overflow-x: hidden;
+}
+
+.goleft-btn-more {
+  position: sticky;
+  right: 95%;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.323);
+  border-radius: 10px;
+  min-width: 60px;
+}
+
+.goright-btn-more {
+  position: sticky;
+  right: 0%;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.292);
+  border-radius: 10px;
+  min-width: 50px;
+}
+
+.goleft-btn-more svg,
+.goright-btn-more svg {
+  color: white;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  .more-cont {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .more-cont {
+    padding: 0;
+  }
+  .more-games {
+    width: 95%;
+    overflow-x: auto;
+  }
+  .goleft-btn-more {
+    min-width: 30px;
+    right: 93%;
+    display: none;
+  }
+
+  .goright-btn-more {
+    right: 2%;
+    min-width: 30px;
+    display: none;
+  }
+}

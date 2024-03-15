@@ -1,0 +1,277 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  background-color: rgb(255, 255, 255);
+  font-family: "Rubik";
+  font-weight: 500;
+  color: #434242;
+  font-size: 0.9rem;
+  z-index: 125;
+}
+
+.selected {
+  color: #e60012;
+}
+
+.selected::before {
+  border-bottom: red 5px solid;
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  background-color: rgb(230, 0, 18);
+}
+
+.navbar-items {
+  display: flex;
+  width: 1024px;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  gap: 3px;
+  position: relative;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  padding: 0px;
+  transition: all 200ms ease-in-out 0s;
+}
+
+.header-nav-item:hover {
+  color: #e60012;
+}
+
+.header-nav-item img {
+  width: 18px;
+}
+
+.header-nav-item span {
+  transition: transform 0.3s ease;
+}
+
+.down-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  background-color: rgb(248, 248, 248);
+  gap: 10px;
+  font-family: "Rubik";
+  font-weight: 500;
+  color: #434242;
+  font-size: 1rem;
+}
+
+.down-item {
+  display: flex;
+  align-items: center;
+}
+
+.down-item img {
+  width: 30px;
+}
+
+.vertical-line {
+  display: inline-block;
+}
+
+.grey-screen {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0%;
+  z-index: 15;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+/* My nintindo store*/
+
+.mynin-cont {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 1000;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  font-family: "Rubik";
+  font-weight: 500;
+  color: #434242;
+  font-size: 0.9rem;
+}
+
+.show {
+  max-height: 450px;
+}
+
+.nint-logo {
+  width: 100vw;
+  height: 64px;
+  background-color: rgb(230, 0, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nint-logo img {
+  width: 200px;
+}
+
+.nint-logo-zigzag {
+  width: 100%;
+  height: 14px;
+  background-size: auto 14px;
+  background-repeat: repeat-x;
+  z-index: 100;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDVweCIgaGVpZ2h0PSIxNHB4IiB2aWV3Qm94PSIwIDAgNDUgMTQiIHZlcnNpb249IjEuMSIKICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT5TdG9yZWZyb250LWF3bmluZy1wYXR0ZXJuPC90aXRsZT4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJTdG9yZWZyb250LWF3bmluZy1wYXR0ZXJuIiBmaWxsPSIjRTYwMDEyIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNNDUsMCBMMCwwIEwwLDEzLjc3MzY4IEMxLjMzMzAyMDAxLDEzLjgzNzcxOTMgMi42NDkxNDAxMywxMy40NTM5MDE4IDMuNzM4NzcsMTIuNjgzMzUgTDE5LjI4NDQ4LDEuNjI4NjYgQzIxLjM2NjIzOTQsMC4xNDgzMTg1OTggMjQuMTU3MDEwNiwwLjE0ODMxODU5OCAyNi4yMzg3NywxLjYyODY2IEw0MS43ODQ0OCwxMi42ODMzNSBDNDIuNzI4MzU2MywxMy4zNTAwNDM4IDQzLjg0NTI4NSwxMy43Mjg3NzYgNDUsMTMuNzczNjggTDQ1LDAgWiIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+}
+
+.nin-store-items {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 15px;
+  width: 100vw;
+}
+
+.nin-store-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nin-store-item p:hover {
+  color: #e60012;
+  cursor: pointer;
+}
+
+.nin-nav-img {
+  display: flex;
+  gap: 7px;
+}
+
+.nin-nav-img img {
+  height: 18px;
+}
+
+.shopall-btn {
+  color: #e60012;
+  font-size: 18px;
+  border: red solid 1px;
+  padding: 10px 18px;
+  border-radius: 13px;
+  margin: 20px 0 10px 0;
+}
+
+.shopall-btn:hover {
+  animation: repulse 0.4s;
+  background-color: rgb(253, 230, 231);
+  transform: scaleX(1.05) scaleY(1.05) translateZ(0px);
+  border-color: rgb(172, 0, 13);
+}
+
+/* Others */
+.nav-other-con {
+  position: absolute;
+  background-color: white;
+  z-index: 1223;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.showothers {
+  max-height: 450px;
+}
+
+.nav-other-item {
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-other-item:hover {
+  color: red !important;
+}
+
+.nav-other-item:hover > .nav-other-img-cont {
+  background-color: #e60012;
+}
+
+.nav-other-img-cont {
+  border: 1px rgba(0, 0, 0, 0.415) solid;
+  padding: 8px 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.nav-other-item img {
+  height: 70px;
+}
+
+.nav-other-item p {
+  width: 150px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .selection {
+    display: none;
+  }
+
+  .down-item p {
+    font-size: 1.7vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .down-item p {
+    font-size: 15px;
+  }
+
+  .img-show {
+    display: none;
+  }
+}
